@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 8</title>
+</head>
+<body>
+    <script>
+        edadUsu1 = prompt("¿Cuantos años tienes Usuario 1?");
+        edadUsu2 = prompt("¿Cuantos años tienes Usuario 2?");
+        edadUsu3 = prompt("¿Cuantos años tienes Usuario 3?");
+        
+        let edades = [`${edadUsu1}`, `${edadUsu2}`, `${edadUsu3}` ]
+
+        const pasar = edades.filter(function(años, key){
+         if (años >= 18){
+             alert(`Puedes ingresar a la página Usuario `+ `${key + 1}`);
+         }
+         else if (años <18){
+             alert(`No puedes ingresar a la página Usuario ` + `${key + 1}`);
+         }
+        });
+
+    </script>
+    
+</body>
+</html>
